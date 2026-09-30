@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head> 
+ <title>Mi primera página</title>
+ 
+ <style> 
+  body { 
+   bacground-color: <blockquote>
+}
+
+h1 {
+ color: green;
+ text-align: center;
+}
+
+p {
+ color: orange;
+ text-align: center;
+ text-size: 25px;
+}
+ </style>
+</head>
+
+<body>
+ 
+  <h1 id="titulo">los pibes piolas</h1>
+  
+  <p id="mensaje">quién de los pibes quiere jugar free</p>
+  
+  <p id="datos"></p>
+  
+  <button onclick="cambiarTitulo()">friii?🕹️</button>
+  
+  <button onclick="cambiarColor()">cambio de color🌈</button>
+
+<button onclick="cambiarFondo()">Fondo🕳️</button>
+
+<button onclick="agrandarTitulo()">Agrandar título⬛</button>
+
+<button onclick="achicarTitulo()">Achicar titulo⬜</button>
+
+<button onclick="agrandarMensaje()">Agrandar mensaje✉️</button>
+
+<button onclick="achicarMensaje()">Achicar mensaje📨</button>
+
+<button onclick="cambiarMensaje()">Cambiar mensaje📩</button>
+
+<button onclick="modoFiesta()">Modo fiesta 🎉 </button> 
+
+<button onclick="modoNormal()">Modo normal🎅</button>
+
+<button onclick="sumarPunto()">+1 punto✅</button>
+
+<button onclick="restarPunto()">-1 punto❌</button>
+
+<script>
+
+
+
+ function cambiarTitulo() { 
+ 
+document.getElementById("titulo").textContent= "la fri señal";
+}
+
+function cambiarColor() {
+ 
+document.getElementById("titulo").style.color= "fuchsia";
+}
+
+function cambiarFondo() {
+ 
+  document.body.style.backgroundColor= "pink";
+}
+
+function agrandarTitulo() {
+  
+document.getElementById("titulo").style.fontSize = "60px";
+}
+
+function achicarTitulo() {
+  
+document.getElementById("titulo").style.fontSize= "25px";
+}
+
+function agrandarMensaje() {
+  
+document.getElementById("mensaje").style.fontSize= "30px";
+}
+
+function achicarMensaje() {
+  
+document.getElementById("mensaje").style.fontSize= "10px";
+}
+
+function cambiarMensaje() {
+  
+document.getElementById("mensaje").innerHTML = "son trolazos";
+}
+
+function modoFiesta() {
+  
+document.getElementById("titulo").textContent= "Modo fiesta";
+
+document.getElementById("titulo").style.color= "yellow";
+
+document.getElementById("titulo").style.fontSize= "60px"
+  document.body.style.backgroundColor= "purple";
+  
+  document.getElementById("mensaje").textContent= "¡Los pibes están en modo fiesta!";
+}
+
+function modoNormal() {
+  
+document.getElementById("titulo").textContent= "los pibes piolas";
+
+document.getElementById("titulo").style.color= "white";
+
+document.getElementById("titulo").style.fontSize= "40px";
+ document.body.style.backgroundColor= "black";
+ 
+ document.getElementById("mensaje").textContent= "quién de los pibes quiere jugar free";
+}
+
+let jugador = "Los pibes";
+let juego = "free fire";
+let puntos = 20;
+
+puntos = puntos +1
+
+ alert (jugador)
+ alert (juego)
+ alert (puntos)
+
+document.getElementById("datos").textContent =
+ "Juego: " + juego + " | Puntos: " + puntos;
+ 
+function sumarPunto() {
+  puntos++;
+  
+document.getElementById("datos").textContent = 
+ "Juego: " + juego + "Puntos: " + puntos;
+}
+ 
+ function restarPunto() {
+if (puntos >0) {
+  puntos--;
+} else {
+ alert ("¡No quedan puntos!")
+}
+
+
+document.getElementById("datos").textContent = 
+ "Juego: " + juego + "Puntos: " + puntos;
+ }
+
+
+  </script>
+  
+</body>
+ </html>
